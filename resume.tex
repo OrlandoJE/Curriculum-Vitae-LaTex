@@ -1,0 +1,136 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11pt, a4paper]{awesome-cv}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% CV Profile Selection: nano, programming, or both
+% Uncomment only one of these options:
+% \def\cvprofile{nano}       % Nanotechnology profile
+\def\cvprofile{programming} % Programming profile
+% \def\cvprofile{both}      % Show both nanotechnology and programming content
+
+%%% Define more robust conditional rendering commands
+\usepackage{etoolbox}
+
+% Define new boolean conditions
+\newbool{shownano}
+\newbool{showprogramming}
+
+% Set the booleans based on the selected profile
+\ifx\cvprofile\undefined
+  \booltrue{shownano}
+  \booltrue{showprogramming}
+\else
+  \ifnum\pdfstrcmp{\cvprofile}{nano}=0
+    \booltrue{shownano}
+    \boolfalse{showprogramming}
+  \else
+    \ifnum\pdfstrcmp{\cvprofile}{programming}=0
+      \boolfalse{shownano}
+      \booltrue{showprogramming}
+    \else
+      \ifnum\pdfstrcmp{\cvprofile}{both}=0
+        \booltrue{shownano}
+        \booltrue{showprogramming}
+      \else
+        \booltrue{shownano}
+        \booltrue{showprogramming}
+      \fi
+    \fi
+  \fi
+\fi
+
+% Define the tag commands
+\newcommand{\nanotag}[1]{\ifbool{shownano}{#1}{}}
+\newcommand{\programmingtag}[1]{\ifbool{showprogramming}{#1}{}}
+\newcommand{\alwaystag}[1]{#1}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-skyblue}
+\definecolor{awesome}{HTML}{00aaff}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+\headersocialsep[\quad\textbar\quad]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     3rd party packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Needed to divide into several files
+\usepackage{import}
+\usepackage{ragged2e}
+% \usepackage[spanish]{babel} % Uncomment to use spanish
+\usepackage{hyperref}
+\usepackage{tikz}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Orlando Antonio}{Jiménez Esparza}
+% \mobile{ (+52) 311 • 105 • 6066}
+%%% Social
+\email{orlando.jimenez@iteso.mx}
+% \homepage{link}
+\linkedin{orlandojimenezesparza}
+\github{OrlandoJE}
+%%% Optionals
+\position{ITESO{\enskip\cdotp\enskip}NANOTECHNOLOGY ENGINEERING STUDENT}
+\address{San Pedro Tlaquepaque, Jalisco}
+% \quote{``Make the change that you want to see in the world."}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter{\today}
+  {Curriculum Vitae~~~·~~~Orlando Antonio Jiménez Esparza}
+  {\thepage}
+
+\begin{document}
+%%% Make a header for CV with personal data
+\makecvheader{}
+
+%%% Import contents
+\import{\sectiondir}{summary.tex}
+\import{\sectiondir}{experience.tex}
+\import{\sectiondir}{education.tex}
+\import{\sectiondir}{projects.tex}
+\import{\sectiondir}{certifications.tex}
+\import{\sectiondir}{skills.tex}
+% \import{\sectiondir}{contact.tex}
+
+\end{document}
