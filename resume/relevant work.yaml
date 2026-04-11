@@ -1,0 +1,191 @@
+projects:
+  - id: solar-panel-thin-film-2024
+    title: "Design, Fabrication and Characterization of a Solar Panel"
+    domain: "Thin Films and Electronic Devices"
+    institution: "ITESO"
+    location: "Tlaquepaque, Jalisco, Mexico"
+    date:
+      month: "December"
+      year: 2024
+    description: >
+      Project focused on the design and fabrication of a solar panel using thin
+      film technology. The work included the deposition of a gold (Au) thin film
+      on a silicon wafer, followed by electrical and optical characterization of
+      its photovoltaic properties to assess efficiency and performance under
+      varying illumination conditions.
+    methods:
+      - "Thin film deposition"
+      - "Metal evaporation (Au on Si)"
+      - "Photovoltaic characterization"
+    tools_techniques:
+      - "Silicon wafers"
+      - "Gold thin films"
+      - "Optical and electrical measurements"
+    outputs:
+      - "Functional thin-film solar cell prototype"
+    tags:
+      - thin-films
+      - photovoltaics
+      - materials-science
+
+  - id: silicon-absorbance-measurement-2023
+    title: "Silicon Thin Film Absorbance Measurement"
+    domain: "Circuit Prototyping"
+    institution: "ITESO"
+    location: "Tlaquepaque, Jalisco, Mexico"
+    date:
+      month: "November"
+      year: 2023
+    description: >
+      Study on the optical absorbance of a thin silicon film through the design
+      and assembly of a photoemitter–photoreceptor circuit implemented on a
+      breadboard. The spectral response of the film was analyzed using LEDs of
+      different wavelengths to evaluate wavelength-dependent absorbance.
+    methods:
+      - "Electronic circuit prototyping"
+      - "Optical absorbance analysis"
+    tools_techniques:
+      - "Breadboard circuits"
+      - "LED-based photoemitters"
+      - "Photoreceptor sensors"
+    outputs:
+      - "Absorbance vs. wavelength characterization"
+    tags:
+      - optics
+      - electronics
+      - experimental-characterization
+
+  - id: au-ag-nanoparticles-2023
+    title: "Synthesis and Characterization of Au and Ag Nanoparticles"
+    domain: "Nanostructures"
+    institution: "ITESO"
+    location: "Tlaquepaque, Jalisco, Mexico"
+    date:
+      month: "October"
+      year: 2023
+    description: >
+      Experimental study focused on the chemical synthesis of silver (Ag) and
+      gold (Au) nanoparticles via reduction methods. The nanoparticles were
+      characterized using Scanning Electron Microscopy (SEM) and
+      Energy-Dispersive X-ray Spectroscopy (EDS) to analyze morphology, particle
+      size distribution, and elemental composition.
+    methods:
+      - "Chemical reduction synthesis"
+      - "Electron microscopy"
+    tools_techniques:
+      - "SEM"
+      - "EDS"
+      - "Colloidal nanoparticle synthesis"
+    outputs:
+      - "Morphological and compositional nanoparticle analysis"
+    tags:
+      - nanomaterials
+      - microscopy
+      - materials-characterization
+
+  - id: mirrors-thin-films-2023
+    title: "Design, Fabrication and Characterization of Convex and Concave Mirrors"
+    domain: "Thin Films and Optical Phenomena"
+    institution: "ITESO"
+    location: "Tlaquepaque, Jalisco, Mexico"
+    date:
+      month: "April"
+      year: 2023
+    description: >
+      Design and fabrication of convex mirrors using electron beam evaporation
+      (EBE) for the deposition of titanium and silver thin films onto silica
+      lenses. Optical performance was evaluated through focal length
+      measurements and reflection analysis to validate curvature accuracy and
+      image formation.
+    methods:
+      - "Electron beam evaporation"
+      - "Optical performance testing"
+    tools_techniques:
+      - "EBE system"
+      - "Titanium and silver thin films"
+      - "Silica optical substrates"
+    outputs:
+      - "Optically characterized mirror assemblies"
+    tags:
+      - optics
+      - thin-films
+      - experimental-physics
+
+  - id: devlib-web-platform-2024
+    title: "devLib"
+    domain: "Web Design and Development"
+    institution: null
+    location: "San Pedro Tlaquepaque, Jalisco, Mexico"
+    date:
+      month: "September"
+      year: 2024
+    description: >
+      Web-based project aimed at consolidating and curating tools for design and
+      web development within a unified platform.
+    methods:
+      - "Web application design"
+      - "Frontend development"
+    tools_techniques:
+      - "Modern web frameworks"
+    outputs:
+      - "Deployed web platform"
+    links:
+      - label: "Project website"
+        url: "https://dev-lib-gamma.vercel.app/"
+    tags:
+      - web-development
+      - software-projects
+
+  - id: c-programming-projects-2024
+    title: "Text Encoding and Data Management"
+    domain: "C Programming"
+    institution: null
+    location: "San Pedro Tlaquepaque, Jalisco, Mexico"
+    date:
+      month: "May"
+      year: 2024
+    description: >
+      Series of software projects implemented in the C programming language,
+      including binary-to-text message decoding using 8-bit ASCII, a
+      terminal-based hangman game with input validation, and a command-line task
+      management system employing file I/O and structured data for persistent
+      storage.
+    methods:
+      - "Procedural programming"
+      - "File input/output"
+    tools_techniques:
+      - "C language"
+      - "Command-line interfaces"
+    outputs:
+      - "Multiple standalone C programs"
+    tags:
+      - software-development
+      - systems-programming
+
+  - id: python-pos-inventory-2023
+    title: "POS and Inventory Management System"
+    domain: "Python Development"
+    institution: null
+    location: "San Pedro Tlaquepaque, Jalisco, Mexico"
+    date:
+      month: "July"
+      year: 2023
+    description: >
+      Development of a graphical point-of-sale and inventory management system
+      using Python and Tkinter, integrating SQLite for persistent data storage.
+      The system includes user authentication, product registration, inventory
+      tracking, sales logging, and automated report generation.
+    methods:
+      - "GUI application development"
+      - "Relational database integration"
+    tools_techniques:
+      - "Python"
+      - "Tkinter"
+      - "SQLite"
+      - "matplotlib"
+    outputs:
+      - "Fully functional desktop POS system"
+    tags:
+      - software-development
+      - databases
+      - desktop-applications
